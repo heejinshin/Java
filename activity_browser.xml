@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="com.hitouch.hayantree.BrowserActivity">
+
+    <!--width, height..정의-->
+    <WebView
+        android:id="@+id/webInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="100dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad"></com.google.android.gms.ads.AdView>
+
+    <Button
+        android:id="@+id/tvBtnAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="광고 시청 후 코인 얻기"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</RelativeLayout>
